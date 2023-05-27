@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<script>
+var str = '';
+nextPrime:
+for (var i = 2; i <= 9; i++) {
+  for (var j = 2; j < i; j++) {
+    if (i % j == 0) continue nextPrime;
+  }
+  str = str + i + ', ';
+}
+alert('Простые числа от 1 до 9: ' + str);
+</script>

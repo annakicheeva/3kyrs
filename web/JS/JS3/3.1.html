@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; 
+}
+var arr = [];
+for(let i=0; i<15; i++) {
+	arr[i] = getRandomInt(-10, 30);
+}
+var sum = 0;
+var k = 0;
+for (let i = 0; i < 15; i ++) { 
+	if (arr[i] > 0){
+		sum += arr[i];
+		k++;
+	}
+ }
+alert('Массив: ' + arr + '\nСр. арифметическое положительных элементов: ' + sum/k);
+</script>

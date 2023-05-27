@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+
+setTimeout( () => {
+	alert('Я буду раньше');
+	setTimeout( () => {
+	    // deeper code
+	    alert('Я буду позже');
+	}, 0);
+}, 1);
+
+setTimeout();
+
+</script>

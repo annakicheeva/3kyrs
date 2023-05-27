@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script>
+function palindrom(str) {
+	if (str == str.split('').reverse().join(''))
+	{
+		alert('Строка палиндром');
+	} else {
+		alert('Строка НЕ палиндром');
+	}
+};
+
+var s = prompt('Введите строку: ').toLowerCase();
+palindrom(s);
+
+</script>

@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script>
+let user = {
+  name: "Иван"
+};
+
+function Order(dish) {
+  this.dish = dish;
+}
+
+function Cafe(res) {
+  this.res = res;
+}
+
+order1 = new Order("бургер");
+order2 = new Order("суши");
+
+cafe1 = new Cafe("Вкусно и точка");
+cafe2 = new Cafe("Якитория");
+
+let s = prompt('Здравствуйте, ' + user.name + '. Введите блюдо: ');
+if (s == 'бургер'){
+  alert('Заказ доставит рeсторан: ' + cafe1.res);
+} else if (s == 'суши'){
+  alert('Заказ доставит рeсторан: ' + cafe2.res);
+} else alert('Такого заказа нет. ');
+
+
+
+
+</script>

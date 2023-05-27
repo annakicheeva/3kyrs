@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script>
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; 
+}
+
+function square(array){
+	for (let i = 0; i < array.length; i++) { 
+		if (array[i] < 0){
+			array[i] = array[i]*array[i];
+		}	
+ 	}
+ 	return array;
+}
+
+n = parseInt(prompt('Введите n (n>10): '));
+var arr = [];
+for(let i=0; i<n; i++) {
+	arr[i] = getRandomInt(-10, 30);
+}
+alert('Массив: ' + arr + '\nНовый массив: ' + square(arr));
+
+</script>

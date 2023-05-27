@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+
+let allList = ['mail1@mail.ru', 'mail2@mail.ru', 'mail3@mail.ru', 'mail4@mail.ru'];
+ 
+let newList = ['mail1@mail.ru', 'mail3@mail.ru'];
+ 
+
+let getEmails = () => {
+  return allList.filter((mail) => !newList.includes(mail));
+};
+ 
+alert('Все e-mails: ' + allList + '\nНовые emails: ' + getEmails());
+</script>

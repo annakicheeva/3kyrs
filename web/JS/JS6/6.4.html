@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script>
+
+class User {
+
+  constructor(name) {
+    this.name = name;
+  }
+
+  newName() {
+    alert(this.name.toLowerCase().split('').reverse().join(''));
+  }
+
+}
+
+let user = new User('Аня');
+user.newName();
+
+</script>

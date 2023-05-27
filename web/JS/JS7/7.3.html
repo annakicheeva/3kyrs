@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script>
+
+// задание 3
+var palindrom = str => str == str.split('').reverse().join('') ? 'Палиндром': 'Не палиндром';
+alert('Фамилия: Кичеева\n' + palindrom('Кичеева'.toLowerCase()));
+
+// задание 4
+var arr = [5, 6, 12, 0, 1, 19, 20];
+var average = arr.reduce((a, b) => (a + b))/arr.length;
+alert('Массив: ' + arr + '\nСр. значение: ' + average);
+
+
+// задание 5
+var daysNewYear = (today, nextDate, msPerDay) => Math.round((nextDate.getTime()
+    - today.getTime())/msPerDay);
+
+let today = new Date();
+let nextDate = new Date("January 1, 2024");
+let msPerDay = 24*60*60*1000;
+alert('Сколько дней осталось до Нового года?\n' + daysNewYear(today, nextDate, msPerDay));
+
+// задание 6
+let empty = () => {};
+alert(empty());
+
+// задание 7
+var x = [5, 6, -12, 5, -3];
+var sum_x = x.reduce((a, b) => a + b);
+var even_x = x.filter(v => v % 2 == 0); 
+var double_x = x.map(v => v * 2);       
+alert('Массив: ' + x + '\nСумма: ' + sum_x + '\nЧетные: ' + even_x + '\n*2: ' + double_x);
+
+
+</script>

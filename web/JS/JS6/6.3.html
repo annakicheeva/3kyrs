@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<script>
+
+class User {
+
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHi() {
+    alert('Здравствуйте, ' + this.name);
+  }
+
+}
+
+str = prompt('Введите ваше имя: ');
+let user = new User(str);
+user.sayHi();
+
+</script>

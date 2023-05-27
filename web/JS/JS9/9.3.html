@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script>
+var min = +prompt('Введите число от 0 до 59: ', '');
+
+ 
+switch (true) {
+  case min >= 0 && min <= 14:
+    alert('В первую четверть.');
+    break;
+  case min >= 15 && min <= 30:
+    alert('Во вторую четверть.');
+    break;
+  case min >= 31 && min <= 45:
+    alert('В третью четверть.');
+    break;
+  case min >= 46 && min <= 59:
+    alert('В четвертую четверть.');
+    break;
+  default:
+    alert( "Нет таких значений" );
+  
+}
+
+</script>

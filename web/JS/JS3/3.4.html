@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; 
+}
+
+function simulator(){
+		return getRandomInt(0, 3);
+}
+var n = 0;
+var k = 0;
+while(n < 1000000){
+	let a = simulator();
+	if (a == 0){
+		k++;
+	}
+	n++;
+}
+alert(k);
+</script>

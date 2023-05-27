@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script>
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; 
+}
+a = String(getRandomInt(1, 10));
+do {
+	alert('Угадай число от 1 до 10');
+} while (prompt('Введи число: ') != a);
+alert('Победа!')
+</script>

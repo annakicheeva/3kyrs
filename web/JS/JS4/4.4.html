@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script>
+function User(name, n) {
+  this.name = name;
+  this.n = n;
+
+  this.sayName = function() {
+    alert( "Я студент " + this.name );
+  };
+  this.sayN = function() {
+    alert( "Я учусь на " + this.n + ' курсе');
+  };
+}
+
+let student = new User("Вася", 3);
+student.sayName();
+student.sayN();
+
+</script>

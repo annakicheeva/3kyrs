@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+let a = parseInt(prompt('Введите первое число: ')); 
+let b = parseInt(prompt('Введите второе число: ')); 
+let operator = prompt('Введите операцию (+,-,*,/): '); 
+function calc(num1, num2, operator) { 
+	switch (operator) {
+		case '+': 
+			result = num1 + num2; 
+			break; 
+		case '-': 
+			result = num1 - num2; 
+			break; 
+		case '*': 
+			result = num1 * num2; 
+			break; 
+		case '/': 
+			result = num1 / num2; 
+			break; } 
+	return alert('Ответ: ' + result); };
+calc(a, b, operator);
+let x = parseInt(prompt('Задумайте число. Затем умножьте это число на 2 и прибавьте 7.'));
+res_x = (x - 7)/2;
+alert('Вы загадали число: ' + res_x);
+let name = prompt('Введите имя: '); 
+let year = parseInt(prompt('Введите год рождения: ')); 
+age = 2023 - year;
+document.write(name +': ' + age);
+alert( 'Тип данных имя: ' + typeof(name) +  '\nТип данных год: ' + typeof(year));
+</script>
