@@ -11,5 +11,5 @@ const sum = arr.reduce(function(accumulator, currentValue) {
   return accumulator + currentValue;
 });
 
-console.log(sum/5);
+console.log(sum);
 
