@@ -1,0 +1,30 @@
+body { 
+	font-family: Arial, sans-serif; 
+	background-color: #E6E6FA; 
+	color:#D2B48C;
+	text-align: center;
+}
+
+form { 
+	border: 2px solid #ccc; 
+	padding: 50px; 
+	background-color: #FFFAF0; 
+} 
+
+
+button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 30px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+
+}
+
+
+

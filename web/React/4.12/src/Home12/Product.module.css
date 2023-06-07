@@ -1,0 +1,27 @@
+.item {
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(190, 227, 231);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(95, 139, 206);
+    }
+    
+    .name {
+    text-align: center;
+    font-size: 30px;
+    color:  rgb(95, 139, 206);
+    }
+    
+    .img {
+    width: 100px;
+    height: 100px;;
+    border-radius: 30%;
+    box-shadow: 0 0 15 rgb(212, 200, 200);
+    }
+    
+    .price {
+    margin-top: 30px;
+    font-size: 45px;
+    
+    }
